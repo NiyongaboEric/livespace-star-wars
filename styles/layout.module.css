@@ -1,0 +1,132 @@
+.container {
+	display: grid;
+	grid-template-columns: 0.75fr 3.25fr;
+	min-height: 100vh;
+}
+.topSideContainer {
+	display: none;
+}
+.leftSideContainer {
+	background-color: #f4f4f4;
+}
+.leftSideContainer .logoContainer {
+	display: grid;
+	grid-template-columns: 0.7fr 3fr;
+	padding: 20px 10px 0 10px;
+	align-items: end;
+}
+.leftSideContainer .toggleIcon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+.leftSideContainer .logoIcon {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	align-items: end;
+}
+.leftSideContainer .logoIcon img {
+	width: 35px;
+	height: 35px;
+}
+.leftSideContainer .logoIcon span {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-left: -7px;
+}
+.leftSideContainer ul {
+	list-style-type: none;
+	padding: 35px 0px 0px 0;
+}
+.leftSideContainer ul li {
+	cursor: pointer;
+	padding: 10px 10px;
+}
+.leftSideContainer ul li:hover {
+	background-color: #c3cfd7;
+}
+.leftSideContainer ul li img {
+	height: 25px;
+	width: 25px;
+}
+.leftSideContainer ul li span {
+	font-size: 1.2rem;
+	margin: 0 0 0 23px;
+}
+.rightSideContainer {
+	background-color: #fff;
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+	.leftSideContainer .logoIcon {
+		grid-template-columns: 1fr;
+		margin: auto;
+	}
+	.leftSideContainer .logoIcon span {
+		font-size: 1.1rem;
+	}
+	.leftSideContainer .logoIcon img {
+		width: 0;
+		height: 0;
+	}
+	.leftSideContainer ul li span {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 849px) {
+	.leftSideContainer .logoIcon img {
+		width: 0;
+		height: 0;
+	}
+	.leftSideContainer .toggleIcon {
+		width: 20px;
+		height: 20px;
+	}	
+	.leftSideContainer .logoIcon span {
+		font-size: 15px;
+		text-align: center;
+	}
+	.leftSideContainer ul li img {
+		height: 20px;
+		width: 20px;
+	}
+	.leftSideContainer ul li span {
+		font-size: 11px;
+		margin: 0 0 0 15px;
+	}
+}
+
+@media screen and (max-width: 599px) {
+  .leftSideContainer {
+    display: none;
+  }
+	.container {
+		display: flex;
+    flex-direction: column;
+	}
+	.topSideContainer {
+		display: grid;
+		background-color: #f4f4f4;
+	}
+	.topSideContainer ul {
+		list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	}
+	.topSideContainer ul li {
+		cursor: pointer;
+		padding: 10px 10px;
+	}
+	.topSideContainer ul li:hover  {
+		background-color: #c3cfd7;
+	}
+	.topSideContainer ul li img {
+		height: 20px;
+		width: 20px;
+	}
+	.topSideContainer ul li a {
+		display: grid;
+    justify-items: center;
+	 }
+}

@@ -1,0 +1,79 @@
+.characterContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 20px 10px;
+}
+
+.characterContainer .characterLink:hover {
+	background-color: #f4f4f4;
+}
+.characterContainer .characterLink img {
+	width: 200px;
+	height: 200px;
+	border-radius: 12px;
+}
+.characterContainer .characterTitle {
+	font-size: 1.1rem;
+	padding: 20px 0 0 0;
+}
+.characterContainer .characterLink {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 12px;
+	width: 300px;
+	background-color: #f9f9f9;
+	padding: 15px;
+	margin: 0 0 10px 0;
+}
+.singleCharacter {
+	background-color: whitesmoke;
+	width: 50%;
+	margin: auto;
+	display: flex;
+  flex-direction: column;
+	padding: 15px;
+}
+.singleCharacter img {
+	width: 150px;
+	height: 350px;
+}
+.singleCharacter .characterTitle {
+	text-align: center;
+	margin: 15px 0;
+}
+.singleCharacter .vehiclePlanet {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	color: blue;
+}
+.singleCharacter .vehiclePlanetTitle {
+	font-size: 16px;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+.singleCharacter .vehiclePlanet a {
+	padding: 0px 10px 10px 10px;
+	font-size: 14px;
+}
+.singleCharacter .vehiclePlanet a:hover {
+	color: rgb(47, 80, 141)
+}
+.singleCharacter .characterConnected {
+	display: flex;
+	margin: auto;
+}
+
+.singleCharacter .characterConnected span {
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
+.characterContainer .characterLink .characterDetails {
+	text-align: start;
+	margin: 3px 0;
+	padding: 3px 0;
+	font-size: 15px;
+}
