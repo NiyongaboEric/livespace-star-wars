@@ -13,7 +13,8 @@ I am creating a Star Wars world app and it is deployed to [Vercel](https://lives
 
 ### Install NextJS
 - npx create-next-app@latest
-- npm run dev
+- yarn dev
+- yarn test
 
 
 #### Deploy to Vercel [Vercel](https://nextjs.org/docs/getting-started) Cloud platform  https://nextjs.org/docs/getting-started
