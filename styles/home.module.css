@@ -5,7 +5,7 @@
 }
 
 .characterContainer .characterLink:hover {
-	background-color: #f4f4f4;
+	background-color: #c3cfd7;
 }
 .characterContainer .characterLink img {
 	width: 200px;
@@ -21,10 +21,11 @@
 	flex-direction: column;
 	text-align: center;
 	border-radius: 12px;
-	width: 300px;
-	background-color: #f9f9f9;
+	width: 280px;
 	padding: 15px;
-	margin: 0 0 10px 0;
+	margin: 10px 4px 10px 4px;
+	background-color: #f4f4f4;
+	border: 1px solid #c3cfd7;
 }
 .singleCharacter {
 	background-color: whitesmoke;
@@ -33,10 +34,12 @@
 	display: flex;
   flex-direction: column;
 	padding: 15px;
+	height: 100vh;
 }
 .singleCharacter img {
 	width: 150px;
 	height: 350px;
+	border-radius: 5px;
 }
 .singleCharacter .characterTitle {
 	text-align: center;
@@ -63,12 +66,11 @@
 }
 .singleCharacter .characterConnected {
 	display: flex;
-	margin: auto;
+	margin: 12px auto;
 }
 
 .singleCharacter .characterConnected span {
 	padding: 0 10px;
-	margin: 10px 0;
 }
 
 .characterContainer .characterLink .characterDetails {
@@ -76,4 +78,68 @@
 	margin: 3px 0;
 	padding: 3px 0;
 	font-size: 15px;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1024px)  {
+	.characterContainer .characterLink {
+		width: 260px;
+	}
+}
+
+@media only screen and (min-width: 830px) and (max-width: 949px)  {
+	.characterContainer .characterLink {
+		width: 230px;
+		padding: 10px;
+	}
+	.singleCharacter {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 829px)  {
+	.characterContainer {
+		grid-template-columns: 1fr 1fr;
+	}
+	.characterContainer .characterLink {
+		width: 250px;
+	}
+	.singleCharacter {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px)  {
+	.characterContainer {
+		grid-template-columns: 1fr 1fr;
+	}
+	.characterContainer .characterLink {
+		width: 240px;
+		margin: 10px 2px
+	}
+	.characterContainer .characterTitle {
+		font-size: 16px;
+	}
+	.singleCharacter {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 499px)  {
+	.characterContainer {
+		grid-template-columns: 1fr;
+	}
+	.characterContainer .characterLink {
+		width: 300px;
+		margin: 10px auto;
+	}
+	.characterContainer .characterLink img {
+		width: 250px;
+		height: 250px;
+	}
+	.characterContainer .characterTitle {
+		font-size: 15px;
+	}
+	.singleCharacter {
+		width: 100%;
+	}
 }

@@ -63,7 +63,7 @@
 		margin: auto;
 	}
 	.leftSideContainer .logoIcon span {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 	.leftSideContainer .logoIcon img {
 		width: 0;
@@ -128,5 +128,5 @@
 	.topSideContainer ul li a {
 		display: grid;
     justify-items: center;
-	 }
+	}
 }
